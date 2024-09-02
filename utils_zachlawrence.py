@@ -24,13 +24,15 @@ Here's what a first draft of my utils_case.py might look like:
 I'll test it in an online interpreter to ensure this version runs correctly before continuing.
 '''
 #####################################
-# Import Libaries 
+# Import Libraries 
 #####################################
 import statistics
 from datetime import date
 
 
-
+#####################################
+# Company Data Defined 
+#####################################
 
 has_international_clients: bool = True
 years_in_operation: int = 10
@@ -39,11 +41,15 @@ skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intellige
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
 
-
+#####################################
+# Date Range
+#####################################
 closing_price_date_range_start: date = date(2023, 8, 29)
 closing_price_date_range_end: date = date(2024, 8, 29)
 
-
+#####################################
+# Daily Closing Price Corn Futures
+#####################################
 corn_prices_daily_closing = [
     371.75, 365.25, 367.25, 362.00, 367.75, 371.50, 375.50, 375.00, 378.00, 370.50, 
     375.00, 381.00, 377.75, 383.25, 376.75, 379.25, 383.25, 388.75, 390.75, 386.50, 
@@ -73,7 +79,14 @@ corn_prices_daily_closing = [
     461.00, 461.75, 469.50
 ]
 
+#####################################
+# Statistical Data for Corn based on Closing Price
+#####################################
 
+min_price: float = min(corn_prices_daily_closing)  
+max_price: float = max(corn_prices_daily_closing)  
+mean_price: float = statistics.mean(corn_prices_daily_closing)  
+stdev_price: float = statistics.stdev(corn_prices_daily_closing)
 #####################################
 # Declare a global variable named byline.
 #####################################
