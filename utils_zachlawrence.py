@@ -93,6 +93,32 @@ stdev_price: float = statistics.stdev(corn_prices_daily_closing)
 
 byline: str = 'Millennium Group: Delivering Professional Insights For The Financial Markets'
 
+#####################################
+# F-String Defined
+#####################################
+byline: str = f"""
+----------------------------------------------------------------------------
+Millennium Group: Delivering Professional Insights For The Financial Markets
+----------------------------------------------------------------------------
+Has International Clients:     {has_international_clients}
+Years in Operation:            {years_in_operation}
+Skills Offered:                {skills_offered}
+Client Satisfaction Scores:    {client_satisfaction_scores}
+Minimum Satisfaction Score:    {min_score}
+Maximum Satisfaction Score:    {max_score}
+Mean Satisfaction Score:       {mean_score:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+
+Corn Market Statistical Examples:
+Corn Daily Close Statistics From:  {closing_price_date_range_start} to {closing_price_date_range_end}
+Minimum Daily Close:               {min_price}
+Maximum Daily Close:               {max_price}
+Mean Closing Price:                {round(mean_price, 2)}
+Standard Deviation:                {round(stdev_price, 2)}
+
+
+"""
+
 
 #####################################
 # Define a main() function for this module.
