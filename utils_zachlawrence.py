@@ -28,7 +28,7 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 # Declare a global variable named byline.
 #####################################
 
-byline: str = 'Stellar Analytics: Delivering Professional Insights'
+byline: str = 'Millennium Group: Delivering Professional Insights For The Financial Markets'
 
 #####################################
 # Define a main() function for this module.
