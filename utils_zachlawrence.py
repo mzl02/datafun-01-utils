@@ -24,7 +24,12 @@ max_score: float = max(client_satisfaction_scores)
 mean_score: float = statistics.mean(client_satisfaction_scores)  
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
 
-
+#####################################
+# Additional Varibles
+#####################################
+offers_clients_additional_skillsets = True
+skillsets: list = ["Cyber","Database Design, Implimitation, Optimization and Support","Network Support","Vuln Assessments"]
+current_headcount: float = 4.5
 #####################################
 # Date Range
 #####################################
