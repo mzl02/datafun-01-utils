@@ -98,9 +98,7 @@ Maximum Satisfaction Score:    {max_score}
 Mean Satisfaction Score:       {mean_score:.2f}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 
-Offers Clients Additional Skillsets {offers_clients_additional_skillsets}
-Skillsets {skillsets}
-Current Headcount {current_headcount}
+C
 
 Corn Market Statistical Examples:
 Corn Daily Close Statistics From:  {closing_price_date_range_start} to {closing_price_date_range_end}
