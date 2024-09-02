@@ -16,6 +16,14 @@ average_client_satisfaction: float = 4.7
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
+#####################################
+# Statistical Calculations for Company Data 
+#####################################
+min_score: float = min(client_satisfaction_scores)  
+max_score: float = max(client_satisfaction_scores)  
+mean_score: float = statistics.mean(client_satisfaction_scores)  
+stdev_score: float = statistics.stdev(client_satisfaction_scores)
+
 
 #####################################
 # Date Range
